@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<!--
+    Fiz esse trabalho baseando nos conteúdos estudados nas aulas, e também fiz acompanhando um vídeo da Rafaella Ballerini - LANDING PAGE COM HTML e CSS! pra auxiliar meu entendimento sobre cada coisinha, cada detalhe, eu já fiz curso de HTML e CSS porém nunca tinha tido vontade de fazer algum projeto, e com esse trabalho fiquei com vontade, e vim buscar conhecimento pra não fazer só um trabalho pra faculdade e sim algo que dê pra mostrar como portfólio e etc. Não copiei nada do meu código, inclusive tive que reescrever ele uma vez porque tinha tido uma ideia de site, mas vi que era muito avançado pro conhecimento que tenho, então resolvi simplificar e fazer algo mais simples porém bem feito. Fiz o código acompanhando o vídeo e usando os conhecimentos das aulas e conhecimentos previamente adquiridos.
+-->
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trabalho de portfólio/teste da faculdade Uniube da matéria Tecnologias para Internet 1">
+    <title>5141114 - Gabriel Rodrigues Veloendas</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id="body-fale_conosco">
+    <header class="cabecalho">
+        <a href="https://uniube.br" title="Site da Uniube" target="_blank"><img class="cabecalho-imagem" src="Imagens/logo_uniube.png" alt="Logo da Uniube"> </a>
+        <nav class="cabecalho-menu">
+            <a class="cabecalho-menu-item" href="index.html">INICIO</a>
+            <a class="cabecalho-menu-item" href="links.html">LINKS</a>
+            <a class="cabecalho-menu-item" href="imagens.html">IMAGENS</a>
+            <a class="cabecalho-menu-item" href="fale_conosco.html">FALE CONOSCO</a>
+        </nav>
+    </header>
+<!----------------------------------------------------------------->
+    <main class="conteudo-faleconosco">
+        <h1 id="titulo">Fale Conosco</h1>
+        <p id="subtitulo">Complete suas informações</p>
+        <br>
+
+        <form action="">
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label> <strong></strong>
+                    <input class="input-faleconosco" type="text" name="nome" id="nome" required>
+                </div>
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input class="input-faleconosco" type="text" name="sobrenome" id="sobrenome">
+                </div>
+            </fieldset>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Email</strong></label>
+                <input class="input-faleconosco" type="email" name="email" id="email" required>
+            </div>
+            <div class="campo" id="check" >
+                <label><strong>Marque a opção abaixo que mais se adequa com o que você quer.</strong></label>
+                <label>
+                    <input class="input-faleconosco" type="radio" name="elogio" value="elogio" checked>Elogio
+                </label>
+                <label>
+                    <input class="input-faleconosco" type="radio" name="problemasite" value="problemasite">Problema no Site
+                </label>
+                <label>
+                    <input class="input-faleconosco" type="radio" name="outro" id="outro">Outro
+                </label>
+            </div>
+
+            <div class="campo">
+                <label for="genero"><strong>Gênero</strong></label>
+                <select class="select-faleconosco" id="genero">
+                    <option selected disabled value="">Defina seu gênero</option>
+                    <option>Masculino</option>
+                    <option>Feminino</option>
+                    <option>Outro</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <br>
+                <label><strong>Mensagem</strong></label>
+                <textarea class="textarea-faleconosco" rows="6" style="width: 26em;" id="mensagem" name="mensagem" required></textarea>
+            </div>
+            <button class="button-faleconosco" type="submit" class="botao">Concluído</button>
+        </form>
+    </main>
+    <br><br><br><br>
+<!----------------------------------------------------------------->
+    <footer class="rodape">
+        <img class="rodape-imagem" src="Imagens/logo_uniube.png" alt="Logo da Uniube">
+    </footer>
+</body>
+</html>

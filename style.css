@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@400;700&family=Nunito&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Usei um outro vídeo tutorial que tinha visto já e foi o primeiro site que fiz acompanhando, que eu sabia que ele mexia nessa parte do menu, porque a logo da uniube tava gigante e precisava diminuir. Canal: Aperture Laboratories - Netflix Landing Page | Design Responsivo de Website usando HTML, CSS & Javascript */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    /* usei o site uiGradients para pegar um gradiente legal com os estilos prontos do css */
+    background: #FFEFBA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px;
+    z-index: 100;
+    color: #fff;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    max-width: 1300px;
+}
+
+header .cabecalho-imagem {
+    max-width: 180px;
+}
+
+header .cabecalho-menu {
+    display: flex;
+    gap: 32px;
+}
+
+header .cabecalho-menu a:active {
+    transition: 0.5s;
+    margin-bottom: 0%;
+}
+
+header .cabecalho-menu-item {
+    font-family: 'Anek Telugu', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #040017;
+}
+
+header .cabecalho-menu a:hover {
+    transition: 0.5s;
+    color: #b0885e;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+header .cabecalho-menu a:active {
+    color: #b0885e;
+
+}
+
+/*-------------------------página inicial--------------------------- */
+/* Nessa página deu praticamente tudo certo, só o botão, que pelo que pesquisei o botão quando tá com algum tipo de link ele meio que quebra a estilização, aí o hover não ta funcionando e não sei como arrumar */
+
+.conteudo {
+    margin-bottom: 48px;
+    padding-top: 90px;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo-principal-escrito-titulo {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 64px;
+    color: #040017;
+}
+
+.conteudo-principal-escrito-subtitulo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #040017;
+    margin-top: -25px;
+}
+
+.conteudo-principal-escrito-botao {
+    background-color: #ECD6C4;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #040017;
+    cursor: pointer;
+}
+
+.conteudo-principal-escrito-botao a:hover a:any-link {
+    background-color: rgba(236, 114, 196, 0.53);
+}
+
+.conteudo-principal-imagem {
+    max-height: 500px;
+    margin-top: 40px;
+}
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+.conteudo-secundario-titulo {
+    border-top: 0.4px solid #040017;
+    padding-top: 48px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #040017;
+    margin-bottom: 16px;
+}
+
+.conteudo-secundario-topicos {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #040017;
+}
+
+.rodape {
+    padding: 32px;
+    border-top: 0.2px solid #040017;
+}
+
+.rodape-imagem {
+    max-height: 48px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/*-------------------------página link--------------------------- */
+/* Essa página foi bem tranquila usei os conhecimentos que fui adquirindo no decorrer de ir fazendo a página, reaproveitei muito da outra página e estilizei legal sozinho os links.
+A parte da tabela tive que procurar sobre como juntar duas sessões da tabela*/
+
+
+.conteudo-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.conteudo-links-escrito-titulo {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    color: #040017;
+}
+
+
+.conteudo-links-escrito-subtitulo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #040017;
+    align-items: center;
+    margin-inline: 5%;
+}
+
+.conteudo-links-imagem {
+    max-height: 500px;
+    margin-top: 40px;
+    border-radius: 20px;
+    box-shadow: 7px 8px 7px rgba(0, 0, 0, 0.25);
+}
+
+.conteudo-links-link {
+    padding-top: 48px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+    text-align: center;
+}
+
+.conteudo-links-link a:any-link {
+    color: #4b3621; 
+}
+
+.conteudo-links-link a:hover {
+    transition: 0.5s;
+    color: #b0885e;
+    font-size: 28px;
+    text-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: 4px;
+}
+
+.links {
+    margin-bottom: 35px;
+}
+
+table, th, td {
+    border: 3px solid #4b3621;
+    border-collapse: collapse;
+    border-radius: 05px;
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    table-layout: fixed;
+}
+
+.tabela {
+    margin-top: 40px;
+    font-size: 20px;
+    box-shadow: 7px 8px 7px rgba(0, 0, 0, 0.25);
+}
+
+.tabela-titulo {
+    background-color: #4b3621;
+    color: #b0885e;
+}
+
+.table {
+    border-top: 0.2px dashed #040017 ;
+    border-radius: 2px;
+}
+
+/*-------------------------página imagens--------------------------- */
+/*
+Nossa, nessa parte tive que pesquisar um vídeo sobre como fazer slideshow com html e css, achei um vídeo, mas por algum motivo as imagens não tavam aparecendo, não sei se era por conta do tamanho das minhas imagens que era diferente das que o rapaz do vídeo tava usando, mas pesquisei de novo e estou confiante que agora vai.
+Deu certo, bom mais ou menos, o problema que tava tendo foi resolvido, porém tive problemas com a centralização dos objetos e as imagens tão esticando.
+A centralização arrumei, porém ainda não consegui arrumar a parte da passagem dos slides no centro.
+Consegui, pórém provavelmente não foi feito da melhor maneira, preciso conversar com o professor sobre.
+Também estou com problema com a parte de estilização do fundo dessa página, não sei se foi porque tive que criar uma classe pra ele pra poder configurar direitinho o slideshow e isso atrapalhou na estilização do degrade ou oque.
+Também tive que tirar o rodapé porque tava bugando tudo.
+*/
+
+
+body .body-imagens {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFEFBA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.slider {
+    height: 400px;
+    width: 800px;
+    overflow: hidden;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 20%;
+}
+
+
+.navigation-bar {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.manual-btn {
+    border: 2px solid #4b3621;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 30px;
+}
+
+.manual-btn:hover {
+    background-color: #b0885e;
+    transition: .4s;
+}
+
+.slider input {
+    display: none;
+}
+
+
+.slides {
+    display: flex;
+    width: 1000%;
+    height: 100%;
+}
+
+.slide {
+    width: 10%;
+    transition: 00.5s;
+}
+
+.slide .slide-bbk {
+    width: 200px;
+    height: 300px;
+}
+
+.slide .slide-bm {
+    width: 200px;
+    height: 350px;
+}
+
+.navigation-auto {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.navigation-auto div {
+    border: 2px solid #4b3621;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 30px;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 3.45%;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -6.55%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -16.55%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -26.55%;
+}
+
+#radio5:checked ~ .first {
+    margin-left: -36.55%;
+}
+
+#radio6:checked ~ .first {
+    margin-left: -46.55%;
+}
+
+#radio7:checked ~ .first {
+    margin-left: -56.55%;
+}
+
+#radio8:checked ~ .first {
+    margin-left: -66.55%;
+}
+
+#radio9:checked ~ .first {
+    margin-left: -76.55%;
+}
+
+#radio10:checked ~ .first {
+    margin-left: -86.55%;
+}
+
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background-color: #b0885e;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background-color: #b0885e;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: #b0885e;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background-color: #b0885e;
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5 {
+    background-color: #b0885e;
+}
+
+#radio6:checked ~ .navigation-auto .auto-btn6 {
+    background-color: #b0885e;
+}
+
+#radio7:checked ~ .navigation-auto .auto-btn7 {
+    background-color: #b0885e;
+}
+
+#radio8:checked ~ .navigation-auto .auto-btn8 {
+    background-color: #b0885e;
+}
+
+#radio9:checked ~ .navigation-auto .auto-btn9 {
+    background-color: #b0885e;
+}
+
+#radio10:checked ~ .navigation-auto .auto-btn10 {
+    background-color: #b0885e;
+}
+
+
+/*-------------------------página fale conosco--------------------------- */
+/* nessa página foi um pouco complicado, o tutorial que peguei não explicava muito oque tava acontecendo, mudei a aparecencia de algumas coisas que entendia, o botão que tava bugado era só por conta de ter colocado o nome da classe errado, mas continuo com problema no input radio que não desmarca e não sei como faço pra configurar assim, e também que não consigo dar um padding-left pra distanciar o texto do botãozin */
+
+
+#titulo {
+    font-family: 'Anek Telugu', sans-serif;
+    color: #4b3621;
+    margin-left: 11%;
+}
+
+#subtitulo {
+    font-family: 'Nunito', sans-serif;
+    color: #4b3621;
+    margin-left: 10%;
+}
+
+fieldset {
+    border: 0;
+}
+
+#body-fale_conosco {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1em;
+    justify-content: center;
+}
+
+.input-faleconosco, .select-faleconosco, .textarea-faleconosco, .button-faleconosco {
+    border-radius: 5px;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    color: #040017;
+    display: block;
+}
+
+fieldset .grupo .campo {
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 1px solid #b0885e;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    display: block;
+}
+
+.campo label {
+    cursor: pointer;
+}
+
+.campo select option {
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #e0e0f8;
+}
+
+
+.button-faleconosco {
+    font-size: 1.2em;
+    background: #4b3621;
+    border: 0;
+    margin-bottom: 1em;
+    color: #fff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 115%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50% , 200%);
+}
+
+.button-faleconosco:hover {
+    background: #ccbbff;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.25);
+    text-shadow: none;
+}
+
+#check {
+    display: inline-block;
+}
+
+
+.conteudo-faleconosco {
+    margin-left: 36%;
+    padding-top: 120px;
+}
+
